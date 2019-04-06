@@ -23,28 +23,34 @@ def NormalStress(P, A):
     sigma : flt : [psi]
 		The average normal stress at any point in the cross-sectional area
     """
-	return P/A
+    return P / A
 
 def ShearStress(V, A):
-	"""
-	Average Shear Stress Distribution
+    """
+    Average Shear Stress Distribution
 
-	Computes the average shear stress at any point in the cross-sectional area
+    Computes the average shear stress at any point in the cross-sectional area
 
-	Assumptions
-	-----------
-	* simple or direction shear loading
+    Assumptions
+    -----------
+    * simple or direction shear loading
 
-	Parameters
-	----------
-	V : flt : [lbs]
-		Internal resultant shear force at the section determined from the equations of equilibrium
-	A : flt : [in^2]
-		Cross-sectional area
+    Parameters
+    ----------
+    V : flt : [lbs]
+        Internal resultant shear force at the section determined from the equations of equilibrium
+    A : flt : [in^2]
+        Cross-sectional area
 
-	Returns
-	-------
-	tau_avg : flt : [psi]
-		Average shear stress at the cross-sectional area
-	"""
-	return V/A
+    Returns
+    -------
+    tau_avg : flt : [psi]
+        Average shear stress at the cross-sectional area
+    """
+    return V / A
+
+def helloworld():
+    print("hello world")
+
+if __name__ == "__main__":
+    helloworld()
